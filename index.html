@@ -15,10 +15,10 @@
       <span>itRecruit</span>
     </div>
     <div id="about">
-      <a href="#" title="Possibilities" onclick="slowScroll('#main')">Possibilities</a>
-      <a href="#" onclick="slowScroll('#overiew')" title="Advantages">Advantages</a>
-      <a href="#" onclick="slowScroll('#contacts')" title="Contacts">Contacts</a>
-      <a href="#" onclick="slowScroll('#faq')" title="FAQ">FAQ</a>
+      <a href="#main" title="Possibilities" onclick="slowScroll('#main')">Possibilities</a>
+      <a href="#overiew" onclick="slowScroll('#overview')" title="Advantages">Advantages</a>
+      <a href="#contacts" onclick="slowScroll('#contacts')" title="Contacts">Contacts</a>
+      <a href="#faq" onclick="slowScroll('#faq')" title="FAQ">FAQ</a>
     </div>
   </header>
 
@@ -65,7 +65,9 @@
   </div>
 
   <div id="contacts">
-    <center><h5>Feedback</h5></center>
+    <center>
+      <h5>Feedback</h5>
+    </center>
     <form id="form_input">
       <label for="name">Name <span>*</span></label><br>
       <input type="text" placeholder="Enter your name" name="name" id="name"><br>
@@ -125,7 +127,8 @@
     </div>
   </div>
 
-  <script src="https://ajax.googleapis.com/ajax/libs/cesiumjs/1.78/Build/Cesium/Cesium.js"></script>
+  <script src="https://code.jquery.com/jquery-3.6.4.min.js"
+    integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script>
   <script>
     function slowScroll(id) {
       $('html, body').animate({
